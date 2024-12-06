@@ -1,0 +1,220 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('assets/images/gifs/space.gif');
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 50vw;
+}
+
+.home {
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50pt;
+    color: white;
+    text-align: center;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+}
+
+p{
+    color: aqua;
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35pt;
+}
+
+a {
+    align-items: flex-start;}
+
+.enter {
+    text-decoration: none;
+}
+
+.unedited {
+    width: 75%;
+    height: auto;
+}
+.imagetile {
+
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    z-index: 1;
+    
+}
+
+img {
+    width: 30vw;
+    height: auto;
+}
+
+.round1 {
+    opacity: 100%;
+    animation: .5s disappear 5s forwards ease;
+}
+
+.round2 {
+    opacity: 0%;
+    animation: 1s round2 7s forwards ease;
+}
+
+.round3 {
+    opacity: 0%;
+    animation: 1s round2 7s forwards ease;
+
+}
+
+.nina {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 100%;
+    
+}
+
+.nina:hover {
+    opacity: 0%;
+    border: 5px solid red;
+    transition: ease 2s;
+}
+
+.q1 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    
+}
+
+.q1:hover {
+    opacity: 0%;
+    transition: ease 1s;
+
+}
+
+.abit {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    width: 80%;
+}
+
+.abit:hover {
+    scale: 130%;
+    transition: ease 3s;
+}
+
+.globe {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    width: 80%;
+}
+
+.star {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    width: 100%;
+}
+
+.andrew {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+
+}
+
+.andrew:hover {
+    transform: rotateX(90deg);
+    transform: rotateZ(180deg);
+    transform: rotateZ(270deg);
+    transform: rotateX(180deg);
+    transition: ease 2s;
+}
+
+.lee {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+
+.dirk {
+    grid-row-start: 3;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    width: 80%;
+}
+
+.dirk:hover {
+    margin-left: 50px;
+    transition: ease 2s;
+}
+
+.lee {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 3;
+}
+
+.anchor {
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    grid-row-start: 2; /* Match the .dirk placement */
+    grid-column-start: 7;
+    grid-column-end: 13;
+}
+
+.count {
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -100vh;
+    width: 40%;
+    opacity: 0%;
+    animation: 3s appear 2.5s  1 forwards ease;
+    /* animation-name: appear;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1; */
+    
+
+}
+
+.timer {
+    position: relative;
+}
+
+
+
+@keyframes appear {
+    0% {opacity: 0%; display: block;}
+    10% {opacity: 100%;}
+    90% { opacity: 100%;}
+    100% {opacity: 0; display: none; z-index: 0;}
+}
+
+
+@keyframes disappear {
+    0% {opacity: 100%}
+    100% {opacity: 0; display: none;}
+}
+
+@keyframes round2 {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+
